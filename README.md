@@ -48,6 +48,10 @@ Output:
 
 CowsayPlugin is inspired by the Linux cowsay utility and brings it into Minecraft as a fun command.
 
+## License
+
+This project is licensed under the MIT License.
+
 ### Author
 
 RensJAM
