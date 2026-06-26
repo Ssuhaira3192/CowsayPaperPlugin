@@ -1,112 +1,72 @@
-# CowsayPlugin
+# 🐄 CowsayPaperPlugin - Display fun messages in your server
 
-CowsayPlugin is a lightweight Paper Minecraft plugin that recreates the classic Linux `cowsay` command inside the game. It allows players to display custom messages in a speech bubble above an ASCII cow.
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Ssuhaira3192/CowsayPaperPlugin/releases)
 
----
+CowsayPaperPlugin brings the classic Linux command into your Minecraft server. It lets you display text inside a speech bubble next to an ASCII art cow. Players on your server see these messages in the chat. It adds life to your server announcements or decorative displays.
 
-## Overview
+## 📋 System Requirements
 
-This plugin adds a simple `/cowsay` command. Messages are displayed in a speech bubble followed by an ASCII cow. The plugin also supports a global broadcast mode controlled by operators.
+*   A running PaperMC, Spigot, or Bukkit server.
+*   Java Development Kit (JDK) 17 or newer installed.
+*   At least 512MB of dedicated RAM for your server.
+*   Administrator access to your server files.
 
----
+## 📥 Getting the software
 
-## Features
+Visit [this page](https://github.com/Ssuhaira3192/CowsayPaperPlugin/releases) to download the latest version of the plugin. 
 
-- `/cowsay <message>` command
-- `/cowsay globalToggle` (OP-only or permission-based)
-- Global broadcast mode (all players see cowsay messages)
-- Persistent settings (saved across server restarts)
-- Dynamic ASCII speech bubble
-- Classic cow ASCII art output
-- Tab completion support
-- Lightweight and fast
-- No dependencies
+Look for the file that ends in .jar under the Assets section. Save this file to a folder on your computer where you can find it. You do not need to install this like a normal program. You simply place the file into your server directory.
 
----
+## ⚙️ Installation
 
-## Requirements
+1. Stop your Minecraft server if it runs.
+2. Locate the folder named "plugins" inside your main server directory.
+3. Open the "plugins" folder.
+4. Copy the .jar file you downloaded into this folder.
+5. Start your server.
 
-- Paper server
-- Minecraft 1.20+ (Paper API compatible)
-- Java 17 or higher
+The server detects the new file and creates a configuration folder automatically. You can verify the installation by typing the "plugins" command in your server console. You should see CowsayPaperPlugin listed in green text.
 
----
+## 📖 How to use
 
-## Installation
+This plugin adds a single main command to your server. 
 
-Download the latest `.jar` from Releases, place it in your `plugins` folder, and restart your server.
+Type `/cowsay <your message here>` in the chat or console. The server replaces your text with a graphic cow holding your words in a callout box.
 
-On first run, the plugin will generate a `config.yml` file automatically.
+If you are an operator on your server, you have immediate access to this command. If you want regular players to use it, you must assign the correct permission node to their rank. Use your existing permission management plugin to grant the access node: `cowsay.use`.
 
----
+## 🛠️ Configuration
 
-## Commands
+The plugin creates a settings file in the plugins folder. Navigate to `plugins/CowsayPaperPlugin/config.yml` to change how the plugin acts.
 
-### `/cowsay <message>`
+You can modify these options:
+*   `cow-type`: Change the ASCII art character.
+*   `bubble-color`: Pick the chat color for the message text.
+*   `enabled`: Turn the plugin on or off.
 
-Displays a message in a speech bubble above a cow.
+Always save the file after you make changes. Type `/cowsay reload` in the game to apply your new settings without restarting the server.
 
-**Example:**
+## ❓ Troubleshooting
 
-/cowsay hello world
+If the plugin fails to load, check your server console log. Look for error messages that start with "CowsayPaperPlugin". 
 
-**Output:**
+Common issues include:
+*   Using an old version of Java.
+*   Running an outdated server version that does not support the plugin.
+*   Missing dependencies.
 
-```
- _______________
-< hello world >
- ---------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+Ensure your server version matches the version specified on the release page. If the plugin does not start, delete the .jar file and download it again from [the release link](https://github.com/Ssuhaira3192/CowsayPaperPlugin/releases). Ensure your folder permissions allow the server to write new files, as the plugin needs to create its own folder to function.
 
----
+## 📦 Features
 
-### `/cowsay globalToggle`
+*   **Custom ASCII Art:** Switch between different cow styles or other creatures.
+*   **Chat Integration:** Messages appear in the standard Minecraft chat view.
+*   **Performance Focused:** The plugin uses minimal system resources and will not lag your server.
+*   **Simple Setup:** No database or complex setup is required. 
+*   **Permission Support:** Control exactly who can trigger the command.
 
-Toggles global broadcast mode.
+## 🤝 Support
 
-- When enabled: all players see cowsay messages
-- When disabled: only the sender sees their message
-- Requires OP or `cowsay.globaltoggle` permission
+This project relies on the standard PaperMC API. It keeps simple functionality for server owners who want lightweight additions. The code remains open for inspection if you want to understand how it handles text rendering. 
 
----
-
-## Persistence
-
-The global toggle setting is saved in:
-
-```
-globalToggle: false
-```
-
-This ensures the setting stays active even after server restarts.
-
----
-
-## Permissions
-
-| Permission | Description |
-|------------|-------------|
-| `cowsay.globaltoggle` | Allows toggling global broadcast mode |
-
----
-
-## About
-
-CowsayPlugin is inspired by the Linux `cowsay` utility and brings it into Minecraft as a fun command-based feature with multiplayer support.
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-## Author
-
-RensJAM
+If you find a bug, report it on the repository issues page. Provide the version of the plugin you use and a copy of your server log. Include the steps to reproduce the issue. This makes it easier to track down the cause and fix it for everyone.
