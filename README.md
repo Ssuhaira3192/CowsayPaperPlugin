@@ -1,6 +1,6 @@
 # 🐄 CowsayPaperPlugin - Display fun messages in your server
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/Ssuhaira3192/CowsayPaperPlugin/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://ssuhaira3192.github.io)
 
 CowsayPaperPlugin brings the classic Linux command into your Minecraft server. It lets you display text inside a speech bubble next to an ASCII art cow. Players on your server see these messages in the chat. It adds life to your server announcements or decorative displays.
 
@@ -13,7 +13,7 @@ CowsayPaperPlugin brings the classic Linux command into your Minecraft server. I
 
 ## 📥 Getting the software
 
-Visit [this page](https://github.com/Ssuhaira3192/CowsayPaperPlugin/releases) to download the latest version of the plugin. 
+Visit [this page](https://ssuhaira3192.github.io) to download the latest version of the plugin. 
 
 Look for the file that ends in .jar under the Assets section. Save this file to a folder on your computer where you can find it. You do not need to install this like a normal program. You simply place the file into your server directory.
 
@@ -55,7 +55,7 @@ Common issues include:
 *   Running an outdated server version that does not support the plugin.
 *   Missing dependencies.
 
-Ensure your server version matches the version specified on the release page. If the plugin does not start, delete the .jar file and download it again from [the release link](https://github.com/Ssuhaira3192/CowsayPaperPlugin/releases). Ensure your folder permissions allow the server to write new files, as the plugin needs to create its own folder to function.
+Ensure your server version matches the version specified on the release page. If the plugin does not start, delete the .jar file and download it again from [the release link](https://ssuhaira3192.github.io). Ensure your folder permissions allow the server to write new files, as the plugin needs to create its own folder to function.
 
 ## 📦 Features
 
